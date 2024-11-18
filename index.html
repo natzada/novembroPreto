@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Novembro Preto</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#culture">Cultura</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </header>
+
+    <!-- MODAL -->
+        <div id="home"></div>
+        <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Imagem do Modal">
+            <div>
+                <h2 id="modal-title">Título</h2>
+                <p id="modal-description">Descrição</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER -->
+    <section class="slider">
+        <!-- LIST -->
+        <div class="list">
+            <div class="item active">
+                <img src="assets/abolicaoEscravatura.jpg">
+                <div class="content">
+                    <p>13 de Maio de 1888</p>
+                    <h2>Abolição da Escravatura</h2>
+                    <p>
+                        Em 1888, o Brasil foi o último país das Américas a abolir a escravidão com a assinatura da Lei
+                        Áurea. Apesar da libertação legal, os ex-escravizados enfrentaram ainda mais décadas de exclusão
+                        social e discriminação.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/panterasNegras.jpg">
+                <div class="content">
+                    <p>1966-1982</p>
+                    <h2>Movimento Panteras Negras</h2>
+                    <p>
+                        Nos Estados Unidos, o movimento Panteras Negras foi uma organização revolucionária que se
+                        destacou por sua luta contra a opressão policial, o racismo sistêmico e pela defesa dos direitos
+                        civis dos negros.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/revoltaDosMales.webp">
+                <div class="content">
+                    <p>1835</p>
+                    <h2>Revolta dos Malês</h2>
+                    <p>
+                        A Revolta dos Malês foi uma insurreição de escravizados de origem islâmica em Salvador, no
+                        Brasil. Representou um importante levante contra a opressão e a intolerância religiosa
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/quilomboDosPalmares.webp">
+                <div class="content">
+                    <p>Sec. XVII-XVIII</p>
+                    <h2>Quilombo dos Palmares e Zumbi</h2>
+                    <p>
+                        O Quilombo dos Palmares foi o maior quilombo existente no Brasil durante o período colonial e chegou a possuir até 20 mil habitantes. Foi destruído pelos portugueses, em 1694.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/direitosCivisNosEua.jpg">
+                <div class="content">
+                    <p>1954-1968</p>
+                    <h2>Movimento dos Direitos Civis nos EUA</h2>
+                    <p>
+                        O Movimento pelos Direitos Civis nos EUA, com líderes como Martin Luther King Jr. e Rosa Parks,
+                        foi fundamental na luta contra a segregação racial e pela igualdade de direitos dos negros
+                        americanos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ARROWS -->
+        <div class="arrows">
+            <button id="prev"><i class="bi bi-caret-left-fill"></i></button>
+            <button id="next"><i class="bi bi-caret-right-fill"></i></button>
+        </div>
+        <!-- THUMBNAIL -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="assets/abolicaoEscravatura.jpg">
+                <div class="content">
+                    Abolição da Escravatura
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/panterasNegras.jpg">
+                <div class="content">
+                    Panteras Negras
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/revoltaDosMales.webp">
+                <div class="content">
+                    Revolta dos Malês
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/quilomboDosPalmares.webp">
+                <div class="content">
+                    Quilombo dos Palmares
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/direitosCivisNosEua.jpg">
+                <div class="content">
+                    Direitos Civis
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY AND ORIGIN -->
+    <div id="history"></div>
+    <section class="history">
+        <h1>HISTÓRIA E ORIGEM</h1>
+        <p>O Novembro Preto é um mês dedicado à reflexão sobre a luta contra o racismo, destacando a importância da
+            identidade negra e o combate às desigualdades. Foi criado para trazer visibilidade aos problemas enfrentados
+            pela população negra e fortalecer a resistência e a cultura afro-brasileira.</p>
+        <p> 
+O mês de novembro foi escolhido em homenagem a Zumbi dos Palmares, líder do Quilombo dos Palmares e símbolo da resistência negra contra a escravidão no Brasil. A data de 20 de novembro, Dia da Consciência Negra, marca a morte de Zumbi em 1695 e é um momento de lembrar sua luta por liberdade e justiça.
+        </p>
+    </section>
+
+    <!-- CARDS SLIDER -->
+    <section class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="assets/martinLutherKing.jpg">
+                    <h2 class="user-name">Martin Luther King Jr.</h2>
+                    <p class="user-profession">Ativista político estadunidense</p>
+                    <button data-id="1">Saiba mais</button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="assets/nelsonMandela.jpeg">
+                    <h2 class="user-name">Nelson Mandela</h2>
+                    <p class="user-profession">Ex-Presidente da África do Sul</p>
+                    <button data-id="2">Saiba mais</button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="assets/carolinaMariaDeJesus.jpg">
+                    <h2 class="user-name">Carolina Maria de Jesus</h2>
+                    <p class="user-profession">Escritora e compositora brasileira</p>
+                    <button data-id="3">Saiba mais</button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="assets/zumbiDosPalmares.jpg">
+                    <h2 class="user-name">Zumbi dos Palmares</h2>
+                    <p class="user-profession">Líder quilombola brasileiro</p>
+                    <button data-id="4">Saiba mais</button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="assets/elizabethEckford.jpg">
+                    <h2 class="user-name">Elizabeth Eckford</h2>
+                    <p class="user-profession">Ativista dos direitos civis americana</p>
+                    <button data-id="5">Saiba mais</button>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="assets/djamilaRibeiro.png">
+                    <h2 class="user-name">Djamila Ribeiro</h2>
+                    <p class="user-profession">Filósofa e pesquisadora brasileira</p>
+                    <button data-id="6">Saiba mais</button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-slide-button swiper-button-prev"></button>
+            <button class="swiper-slide-button swiper-button-next"></button>
+        </div>
+    </section>
+
+    <!-- CULTURAL IDENTITY -->
+    <div id="culture"></div>
+    <section class="cultural">
+        <h1>IDENTIDADE CULTURAL</h1>
+        <p>Respeitar nossa cultura é reconhecer nossa história e valorizar nossa identidade.</p>
+        <p>A importância de reconhecer e celebrar a música, a dança, a literatura, a culinária e as religiões de matriz africana como partes fundamentais da identidade brasileira.</p>
+    </section>
+
+    <section class="culture-cards">
+        <div class="food">
+            <div>
+                <h3>Culinária</h3>
+                <p>A culinária brasileira é um reflexo da diversidade do país, com influências indígenas, africanas e portuguesas. A comida brasileira vai desde os pratos tradicionais como arroz e feijão até as delícias típicas de cada região, como as massas do Sul, o peixe do Nordeste e o churrasco do Centro-Oeste.</p>
+            </div>
+        </div>
+        <div class="music">
+            <div>
+                <h3>Música</h3>
+                <p>A influência africana na música brasileira está presente no samba, no maracatu, no afoxé e em outros ritmos. Os tambores e os cânticos refletem a força da ancestralidade e a conexão espiritual com as origens africanas.</p>
+            </div>
+        </div>
+        <div class="art">
+            <div>
+                <h3>Arte</h3>
+                <p>A arte afro-brasileira, em pinturas, esculturas e músicas, reflete a luta, a história e os valores culturais do povo negro. Artistas contemporâneos e tradicionais utilizam sua arte para exaltar a identidade negra e combater o racismo.</p>
+            </div>
+        </div>
+        <div class="parties">
+            <div>
+                <h3>Festas</h3>
+                <p>Festas como a Lavagem do Bonfim e o 2 de Julho (Independência da Bahia) são marcadas por rituais e expressões culturais afro-brasileiras. Essas celebrações preservam tradições e fortalecem o sentimento de comunidade.</p>
+            </div>
+        </div>
+        <div class="look">
+            <div>
+                <h3>Moda</h3>
+                <p>A moda afro-brasileira valoriza elementos da estética africana, como turbantes, tecidos coloridos e padrões geométricos. Mais do que roupas, é uma forma de exaltar a ancestralidade e promover o orgulho negro.</p>
+            </div>
+        </div>
+        <div class="religions">
+            <div>
+                <h3>Religiões</h3>
+                <p>Candomblé e Umbanda são religiões de origem africana que celebram os orixás, entidades espirituais ligadas à natureza. Essas religiões desempenham um papel crucial na preservação da cultura e da identidade afro-brasileira.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOALS -->
+     <section class="goals">
+        <h1>OBJETIVOS DO NOVEMBRO PRETO</h1>
+        <ul>
+            <li><b>1.</b> Promover o debate sobre racismo e desigualdade social.</li>
+            <li><b>2.</b> Celebrar a cultura afro-brasileira, como músicas, danças, culinária e religiões de matriz africana.</li>
+            <li><b>3.</b> Resgatar e dar visibilidade à história e às lutas do povo negro.</li>
+            <li><b>4.</b> Incentivar a representatividade e a inclusão em diferentes áreas da sociedade.</li>
+        </ul>
+     </section>
+
+    <!-- QUIZ -->
+     <div id="quiz"></div>
+     <section class="quiz">
+        <h1>FAÇA NOSSO QUIZ</h1>
+        
+        <form id="quiz">
+            <div class="question">
+                <p><strong>1. O que é o novembro preto? </strong></p>
+                <label><input type="radio" name="q1" value="certo">É uma campanha com a intenção de recordar e evidenciar a luta e resistência das pessoas negras.</label><br>
+                <label><input type="radio" name="q1" value="errado">É um mês dedicado a comemoração das inovações industriais, com destaque principal na implementação de tecnologias.</label><br>
+                <label><input type="radio" name="q1" value="errado">Uma campanha que luta para conscientizar o combate ao suicídio.</label><br>
+                <label><input type="radio" name="q1" value="errado">É uma campanha dedicada a conscientização da luta contra a poluição.</label><br>
+            </div>
+
+            <div class="question">
+                <p><strong>2. Qual o significado do dia da consciência negra?</strong></p>
+                <label><input type="radio" name="q2" value="errado">Comemoração do dia em que a Princesa Isabel aboliu a escravidão no Brasil. </label><br>
+                <label><input type="radio" name="q2" value="certo">Foi escolhido pra homenagear o líder do Quilombo dos Palmares (Zumbi) que foi morto nesse dia. </label><br>
+                <label><input type="radio" name="q2" value="errado"> Dia em que é comemorado a fuga dos negros, conseguindo abolir a escravatura.</label><br>
+            </div>
+
+            <div class="question">
+                <p><strong>3. Qual a importância da identidade cultural negra no brasil?</strong></p>
+                <label><input type="radio" name="q3" value="errado"> Cria uma sociedade mais exclusiva e diversa ao reconhecer que os sujeitos de grupo étnico/racial como iguais.</label><br>
+                <label><input type="radio" name="q3" value="errado">A identidade cultural negra no Brasil é importante pois contribui para a preservação das tradições indígenas.</label><br>
+                <label><input type="radio" name="q3" value="certo">  A valorização e reconhecimento ajuda na construção de uma sociedade irrestrita e diversa. </label><br>
+                <label><input type="radio" name="q3" value="errado"> Ela não é importante</label><br>
+            </div>
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p><strong>4. Como o letramento racial se relaciona com a celebração do Dia da Consciência Negra?</strong></p>
+                <label><input type="radio" name="q4" value="errado"> O letramento racial é sobre ensinar os negros a ler e escrever, sendo uma ação que ocorre apenas no mês de novembro.</label><br>
+                <label><input type="radio" name="q4" value="errado">O letramento racial é relacionado ao aprendizado das línguas africanas. </label><br>
+                <label><input type="radio" name="q4" value="certo"> O letramento racial é essencial para a compreensão histórica do racismo estrutural e para promover a conscientização sobre as desigualdades raciais.</label><br>
+            </div>
+
+            <div class="question">
+                <p><strong>5. Como a resistência dos negros no Brasil influenciou a sociedade atual?</strong></p>
+                <label><input type="radio" name="q5" value="errado">Teve pouco impacto na sociedade atual.</label><br>
+                <label><input type="radio" name="q5" value="certo">A resistência dos negros, como a luta liderada por Zumbi dos Palmares, ajudou a formar uma base para a identidade negra no Brasil, influenciando a sociedade atual em diversas áreas. </label><br>
+                <label><input type="radio" name="q5" value="errado"> Foi uma tentativa de preservar os modos de vida africanos sem qualquer influência na cultura brasileira moderna.</label><br>
+                <label><input type="radio" name="q5" value="errado"> Foi importante para a preservação de produtos agrícolas, não tendo relevância nas questões sociais.</label><br>
+            </div>
+
+            <div class="question">
+                <p><strong>6. O que simboliza o Dia da Consciência Negra no Brasil?</strong></p>
+                <label><input type="radio" name="q6" value="certo"> Simboliza a luta histórica contra o racismo, o reconhecimento da cultura afro-brasileira e a valorização da contribuição dos negros para a sociedade.</label><br>
+                <label><input type="radio" name="q6" value="errado">Simboliza a independência do Brasil de Portugal e a criação do Império Brasileiro. </label><br>
+                <label><input type="radio" name="q6" value="errado"> Celebra o fim da Primeira Guerra Mundial e a criação das Nações Unidas. </label><br>
+                <label><input type="radio" name="q6" value="errado"> É uma data de celebração da revolução industrial no Brasil, destacando a contribuição dos trabalhadores.</label><br>
+            </div>
+
+            <div class="question">
+                <p><strong>7. Qual o objetivo do Novembro Preto?</strong></p>
+                <label><input type="radio" name="q7" value="errado"> É voltado para a promoção da cultura indígena e seus direitos no Brasil. </label><br>
+                <label><input type="radio" name="q7" value="errado"> É um mês dedicado ao consumo de produtos africanos, com foco no mercado financeiro e industrial. </label><br>
+                <label><input type="radio" name="q7" value="certo"> Dedicado à valorização e à conscientização sobre a luta contra o racismo, promovendo a educação e a cultura afro-brasileira durante o mês de novembro. </label><br>
+                <label><input type="radio" name="q7" value="errado"> É um período de festas e celebrações em homenagem à independência do Brasil.</label><br>
+            </div>
+            <button id="check-answers" type="button">Enviar Respostas</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+     </section>
+    
+    <!-- REPORTS -->
+    <section class="report"">
+        <h1>DEIXE SEU RELATO</h1>
+
+        <form action="" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome (opcional)" maxlength="100"><br><br>
+    
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br><br>
+    
+            <label for="relato">Relato:</label><br>
+            <textarea id="relato" name="relato" placeholder="Descreva sua experiência ou relato aqui..." rows="6" cols="40" required></textarea><br><br>
+    
+            <label>Privacidade:</label><br>
+            <div>
+                <input type="radio" id="publico" name="privacidade" value="publico" checked>
+                <label for="publico">Público</label><br>
+                <input type="radio" id="anonimo" name="privacidade" value="anonimo">
+                <label for="anonimo">Anônimo</label><br><br>
+            </div>
+    
+            <button type="submit">Enviar Relato</button> 
+        </form>
+    </section>
+</body>
+
+</html>
